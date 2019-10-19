@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form #formLogin="ngForm" (ngSubmit) = "validaLogin(formLogin)">
+    <ion-list>
+    
+        <ion-item>
+            <ion-label>Nombre: </ion-label>
+            <ion-input type="text" name="nombre" required [(ngModel)]= "registro.nombre"></ion-input>
+          </ion-item>
+      <ion-item>
+        <ion-label>Correo: </ion-label>
+        <ion-input type="email" required name="email" required [(ngModel)]= "registro.email"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>telefono: </ion-label>
+          <ion-input type="number" name="telefono" required [(ngModel)]= "registro.telefono"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Contraseña: </ion-label>
+            <ion-input type="password" name="password" required [(ngModel)]= "registro.password"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>Fecha de nacimiento: </ion-label>
+              <ion-input type="date" name="fechaN" required [(ngModel)]= "registro.fechaN"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Sexo: </ion-label>
+                <ion-input type="text" name="sexo" required [(ngModel)]= "registro.sexo"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label>Direccion: </ion-label>
+                  <ion-input type="text" name="direccion" required [(ngModel)]= "registro.direccion"></ion-input>
+                </ion-item>
+    </ion-list>
+    <ion-button color="secondary" type="submit">Registrarse</ion-button>
+</form>
+</ion-content>

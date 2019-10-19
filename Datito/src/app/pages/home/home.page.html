@@ -1,0 +1,139 @@
+<ion-header color="secondary">
+  <ion-toolbar>
+    <ion-title class="titulo">
+      <h2>MEYD</h2>
+   <ion-button color="success" class="btn" size="small" href="#">Contacto</ion-button>
+   <ion-button color="secondary" class="btn" size="small" href="#">¿Quienes somos?</ion-button>
+   <ion-button color="tertiary" class="btn" size="small" href="#">Inicio</ion-button>
+   </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="body">
+  <div class="titl">
+      <ion-label class="lab"><h1>Tu bienestar es nuestra prioridad</h1></ion-label>
+  </div>
+    <ion-img class="img1" src="../../assets/logo.PNG"></ion-img>
+  <br>
+  <form #formSelect="ngForm" ><i class="fa fa-server" aria-hidden="true"></i>
+      <ion-list>
+          <ion-list-header>Selecciona tu estado y tu municipio</ion-list-header>
+          <ion-item>
+            <ion-label>Estado</ion-label>
+            <ion-select placeholder="Selecciona tu estado">
+              <ion-select-option value="em">Estado de México</ion-select-option>
+              <ion-select-option value="jal">Jalisco</ion-select-option>
+              <ion-select-option value="mich">Michoacan</ion-select-option>
+              <ion-select-option value="bcn">Baja California</ion-select-option>
+              <ion-select-option value="bcs">Baja California Sur</ion-select-option>
+              <ion-select-option value="nl">Nuevo León</ion-select-option>
+              <ion-select-option value="ch">Chiapas</ion-select-option>
+              <ion-select-option value="yuc">Yucatán</ion-select-option>
+              <ion-select-option value="sin">Sinaloa</ion-select-option>
+              <ion-select-option value="son">Sonora</ion-select-option>
+              <ion-select-option value="gu">Guanajuato</ion-select-option>
+              <ion-select-option value="tam">Tamaulipas</ion-select-option>
+              <ion-select-option value="mor">Morelos</ion-select-option>
+              <ion-select-option value="pu">Puebla</ion-select-option>
+              <ion-select-option value="coa">Couahuila</ion-select-option>
+              <ion-select-option value="zac">Zacatecas</ion-select-option>
+              <ion-select-option value="qui">Quintana Roo</ion-select-option>
+              <ion-select-option value="ver">Veracruz</ion-select-option>
+              <ion-select-option value="tab">Tabasco</ion-select-option>
+              <ion-select-option value="nay">Nayarit</ion-select-option>
+              <ion-select-option value="chi">Chihuahua</ion-select-option>
+              <ion-select-option value="que">Queretaro</ion-select-option>
+              <ion-select-option value="dur">Durango</ion-select-option>
+              <ion-select-option value="oa">Oaxaca</ion-select-option>
+              <ion-select-option value="sl">San Luis Potosi</ion-select-option>
+              <ion-select-option value="agu">Aguascalientes</ion-select-option>
+              <ion-select-option value="tla">Tlaxcala</ion-select-option>
+              <ion-select-option value="col">Colima</ion-select-option>
+              <ion-select-option value="ca">Campeche</ion-select-option>
+              <ion-select-option value="hi">Hidalgo</ion-select-option>
+              
+            </ion-select>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Municipio</ion-label>
+            <ion-select value="Escoge tu municipio" okText="Selecciona" cancelText="Cancelar">
+                <ion-select-option value="cagu">Aguascalientes</ion-select-option>
+                <ion-select-option value="cbc">Mexicali</ion-select-option>
+                <ion-select-option value="cbcs">La Paz</ion-select-option>
+                <ion-select-option value="ccamp">San Fransico de Campeche</ion-select-option>
+                <ion-select-option value="cchi">Tuxtla Guitierrez</ion-select-option>
+                <ion-select-option value="cchi">Chihuahua</ion-select-option>
+                <ion-select-option value="cme">Toluca de Lerdo</ion-select-option>
+                <ion-select-option value="cmic">Morelia</ion-select-option>
+                <ion-select-option value="ccoa">Saltillo</ion-select-option>
+                <ion-select-option value="ccol">Colima</ion-select-option>
+                <ion-select-option value="cdur">Victoria de Durango</ion-select-option>
+                <ion-select-option value="cgua">Guanajuato</ion-select-option>
+                <ion-select-option value="cgue">Chilpancingo de los Bravo</ion-select-option>
+                <ion-select-option value="chi">Pachuca de Soto</ion-select-option>
+                <ion-select-option value="cja">Guadalajara</ion-select-option>
+                <ion-select-option value="cmor">Cuernavaca</ion-select-option>
+                <ion-select-option value="cnay">Tepic</ion-select-option>
+                <ion-select-option value="cnu">Monterrey</ion-select-option>
+                <ion-select-option value="coax">Oaxaca</ion-select-option>
+                <ion-select-option value="cpu">Puebla de Zaragoza</ion-select-option>
+                <ion-select-option value="cqu">Santiago de Queretaro</ion-select-option>
+                <ion-select-option value="cqui">Chetumal</ion-select-option>
+                <ion-select-option value="csl">San Luis Potosí</ion-select-option>
+                <ion-select-option value="csi">Culiacan Rosales</ion-select-option>
+                <ion-select-option value="cso">Hermosillo</ion-select-option>
+                <ion-select-option value="ctab">Villahermosa</ion-select-option>
+                <ion-select-option value="ctam">Ciudad Victoria</ion-select-option>
+                <ion-select-option value="ctla">Tlaxcala de Xicohténcatl</ion-select-option>
+                <ion-select-option value="cver">Xalapa-Enriquez</ion-select-option>
+                <ion-select-option value="cyu">Mérida</ion-select-option>
+                <ion-select-option value="czac">Zacatecas</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+  </form>
+  
+
+  <ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Fin de la pobreza</ion-card-subtitle>
+    <ion-card-title>Juitepec con desarrollo social integral</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+      <ion-item>  <ion-img class="img2" src="../../assets/desarrollo.jpg"></ion-img></ion-item>
+    Como administracion asumimos el compromiso con el desarrollo social integral de nuestra
+    ciudad, toda vez que, tenemos como meta disminiur los indices de la pobreza hasta lograr
+    su erradicacion, y poner fin al hambre, a traves de acciones contundentes como la seguriadad
+    alimentaria y mejorar la nutricion en las familias de nuestra ciudad...
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Hambre cero</ion-card-subtitle>
+    <ion-card-title>Ruta de la leche</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>  <ion-img class="img3" src="../../assets/leche.jpg"></ion-img></ion-item>
+    Una de las decisiones adoptadas por  esta  administración, ha  sidocontribuir en la erradicación
+    de la desnutriciónen nuestra población.   Ante  este   reto, nos dimos  a  la  tarea  de fortalecer
+    el programa permanente  municipal denominado “Ruta de la Leche”, logrando que   más de4,000 familias 
+    de   Jiutepec   pudieran adquirir leche a bajo costo, lo que permitióa los integrantes deestoshogares 
+    una  mejor  alimentación,elevando  los  índices  denutrición enniños  y  adultos mayores.
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Salud y bienestar</ion-card-subtitle>
+    <ion-card-title>Hospital General de Jiutepec</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+      <ion-item>  <ion-img class="img4" src="../../assets/hosp.jpg"></ion-img></ion-item>
+    Uno  de  los  compromisos asumidos en   campaña,fue   el   de   adquirir   un predio para la 
+    construcción  del primer hospital deJiutepec.Con  el  apoyo  de  nuestro Cabildo    Municipal, 
+    se autorizó una inversión por la cantidad de$10,000,000.00parala adquisición de un terreno ubicado 
+    en  avenida  de  las  Fuentes  esquina  Par  Vial LázaroCárdenasdel  Centro  de Jiutepec, con una 
+    superficie de 10,000 m².
+  </ion-card-content>
+</ion-card>
+</ion-content>
